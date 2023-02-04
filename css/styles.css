@@ -1,0 +1,145 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --active-color: #ff6c00;
+  /* --main-light-color: #ffffff; */
+  --main-light-color: #000000;
+  --main-dark-color: #303030;
+  --secondary-light-color-alpha: rgba(157, 164, 189, 0.6);
+  --secondary-light-color: #9da4bd;
+  --secondary-dark-color: #555555;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* ======================== КОМПОНЕНТИ ======================== */
+
+/* КНОПКИ */
+
+.modal-btn-dark {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+}
+.modal-btn-dark:hover,
+.modal-btn-dark:focus {
+  background-color: var(--active-color);
+  color: var(--main-light-color);
+}
+.modal-btn-light {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-dark-color);
+}
+.modal-btn-light:hover,
+.modal-btn-light:focus {
+  background-color: var(--active-color);
+  color: var(--main-light-color);
+}
+
+/* ======================== /КОМПОНЕНТИ ======================== */
+
+/* ======================== ШАПКА ======================== */
+.menu-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--main-light-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--active-color);
+}
+.main-number {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--main-light-color);
+}
+.main-number:hover,
+.main-number:focus {
+  color: var(--active-color);
+}
+.modal-btn-dark {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-light-color);
+  cursor: pointer;
+}
+.modal-btn-dark:hover,
+.modal-btn-dark:focus {
+  background-color: var(--active-color);
+  color: var(--main-light-color);
+}
+/* ======================== /ШАПКА ======================== */
+
+/* ======================== ГЕРОЙ ======================== */
+.soc-net-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-dark-color);
+}
+.soc-net-link:hover,
+.soc-net-link:active {
+  color: var(--active-color);
+}
+.above-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-light-color-alpha);
+}
+.main-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--main-light-color);
+}
+.under-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--secondary-light-color);
+}
+
+.btn-hero-item {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: right;
+  letter-spacing: 0.1em;
+  color: var(--main-light-color);
+  cursor: pointer;
+}
+.btn-hero-item:hover,
+.btn-hero-item:focus {
+  color: var(--secondary-light-color-alpha);
+}
+/* ======================== /ГЕРОЙ ======================== */
