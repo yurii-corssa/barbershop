@@ -11,47 +11,54 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="top-background-color">
-          <!-- ======================== ШАПКА ======================== -->
-    <header>
-      <nav class="top-nav">
-        <img
-          class="main-logo"
-          src="./img/logo.png"
-          alt="logotipe"
-          lang="en"
-          height="55"
-          width="69"
-        />
-        <ul class="list menu-list">
-          <li class="menu-item">
-            <a class="link menu-link" href="#">О нас</a>
-          </li>
-          <li class="menu-item">
-            <a class="link menu-link" href="#">Услуги и цены</a>
-          </li>
-          <li class="menu-item">
-            <a class="link menu-link" href="#">Мастера</a>
-          </li>
-          <li class="menu-item">
-            <a class="link menu-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="link main-number" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="modal-btn modal-btn-light" type="button">
-        онлайн-запись
-      </button>
+    <!-- ======================== ШАПКА ======================== -->
+    <header class="header top-background-color">
+      <div class="container header-container">
+        <nav class="top-nav">
+          <img
+            class="main-logo"
+            src="./img/logo.png"
+            alt="logotipe"
+            lang="en"
+            height="55"
+            width="69"
+          />
+          <ul class="list menu-list">
+            <li class="menu-item">
+              <a class="link menu-link" href="#">О нас</a>
+            </li>
+            <li class="menu-item">
+              <a class="link menu-link" href="#">Услуги и цены</a>
+            </li>
+            <li class="menu-item">
+              <a class="link menu-link" href="#">Мастера</a>
+            </li>
+            <li class="menu-item">
+              <a class="link menu-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="link main-number" href="tel:+380441111111"
+          >+38 044 111 11 11</a
+        >
+        <button class="modal-btn modal-btn-light" type="button">
+          онлайн-запись
+        </button>
+      </div>
     </header>
     <!-- ======================== /ШАПКА ======================== -->
 
     <!-- ======================== ОСНОВА ======================== -->
     <main>
       <!-- ======================== ГЕРОЙ ======================== -->
-      <section>
+      <section class="hero top-background-color">
         <!-- === ЛІВА ЧАСТИНА === -->
         <div class="left-hero">
           <ul class="list soc-net-list">
@@ -70,7 +77,7 @@
           <p class="above-title hero-above-title" lang="en">
             A hair salon for men in Kyiv
           </p>
-          <h1 class="main-title" lang="en">BarberShop</h1>
+          <h1 class="main-title title-light" lang="en">BarberShop</h1>
           <p class="subtitle hero-subtitle" lang="en">
             We are experts in trendy men's haircuts. We work quickly, carefully,
             and tastefully.
@@ -88,10 +95,8 @@
       </section>
       <!-- ======================== /ГЕРОЙ ======================== -->
 
-    </div>
-
       <!-- ======================== ПРО НАС ======================== -->
-      <section class="about">
+      <section class="about section">
         <ul class="about-list list">
           <li class="about-list-item">
             <img
@@ -112,8 +117,10 @@
             />
           </li>
         </ul>
-        <h2 class="above-title">О НАС</h2>
-        <h3 class="secondary-title">Лучший Барбершоп твоего города</h3>
+        <h2 class="above-title title-dark">О НАС</h2>
+        <h3 class="secondary-title title-dark">
+          Лучший Барбершоп твоего города
+        </h3>
         <p class="subtitle">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
@@ -130,9 +137,11 @@
       <!-- ======================== /ПРО НАС ======================== -->
 
       <!-- ======================== ПРАЙСЛИСТ ======================== -->
-      <section class="pricelist">
-        <p class="above-title pricelist-above-title">Проведи время в компании лучших мастеров</p>
-        <h2 class="secondary-title pricelist-title">Услуги и цены</h2>
+      <section class="pricelist section">
+        <p class="above-title pricelist-above-title">
+          Проведи время в компании лучших мастеров
+        </p>
+        <h2 class="secondary-title title-light">Услуги и цены</h2>
         <table class="pricelist-table">
           <tr class="pricelist-table-row">
             <td class="pricelist-table-item subtitle">Мужская стрижка</td>
@@ -147,7 +156,9 @@
             <td class="pricelist-table-item subtitle">от 200 грн.</td>
           </tr>
           <tr class="pricelist-table-row">
-            <td class="pricelist-table-item subtitle">Бритье опасной бритвой</td>
+            <td class="pricelist-table-item subtitle">
+              Бритье опасной бритвой
+            </td>
             <td class="pricelist-table-item subtitle">от 200 грн.</td>
           </tr>
         </table>
@@ -161,7 +172,9 @@
             <td class="pricelist-table-item subtitle">от 200 грн.</td>
           </tr>
           <tr class="pricelist-table-row">
-            <td class="pricelist-table-item subtitle">Детская стрижка (до 12 лет)</td>
+            <td class="pricelist-table-item subtitle">
+              Детская стрижка (до 12 лет)
+            </td>
             <td class="pricelist-table-item subtitle">от 300 грн.</td>
           </tr>
           <tr class="pricelist-table-row">
@@ -169,12 +182,14 @@
             <td class="pricelist-table-item subtitle">от 200 грн.</td>
           </tr>
         </table>
-        <button class="modal-btn modal-btn-light" type="button">онлайн-запись</button>
+        <button class="modal-btn modal-btn-light" type="button">
+          онлайн-запись
+        </button>
       </section>
       <!-- ======================== /ПРАЙСЛИСТ ======================== -->
 
       <!-- ======================== ЧОМУ ЙДУТЬ ДО НАС ======================== -->
-      <section class="to-us">
+      <section class="to-us section">
         <ul class="to-us-list">
           <li class="to-us-list-item list">
             <p class="to-us-list-title">600</p>
@@ -193,8 +208,10 @@
             <p class="to-us-list-text">Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <p class="above-title">старая традиционная школа</p>
-        <h2 class="secondary-title">Почему приходят именно к нам?</h2>
+        <p class="above-title title-dark">старая традиционная школа</p>
+        <h2 class="secondary-title title-dark">
+          Почему приходят именно к нам?
+        </h2>
         <p class="subtitle">
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
@@ -203,48 +220,70 @@
       <!-- ======================== /ЧОМУ ЙДУТЬ ДО НАС ======================== -->
 
       <!-- ======================== НАШІ МАЙСТРИ ======================== -->
-      <section class="masters">
-        <p class="above-title">для настоящих ценителей атмосферы</p>
-        <h2 class="secondary-title">Наши мастера</h2>
-        <ul class="masters-list list">
-          <li class="masters-list-item">
-            <img class="masters-list-img"
-              src="./img/john-smith.jpg"
-              alt="Джон Смит стрижет мужчину"
-              width="370"
-              height="346"
-            />
-            <h3 class="masters-list-title" lang="en">John Smith</h3>
-            <p class="masters-list-text" lang="en">Extreme Barber</p>
-          </li>
-          <li class="masters-list-item">
-            <img class="masters-list-img"
-              src="./img/michele-doe.jpg"
-              alt="Мишель Доу стрижет мужчину"
-              width="370"
-              height="346"
-            />
-            <h3 class="masters-list-title" lang="en">Michele Doe</h3>
-            <p class="masters-list-text" lang="en">Extreme Barber</p>
-          </li>
-          <li class="masters-list-item">
-            <img class="masters-list-img"
-              src="./img/alan-black.jpg"
-              alt="Алан Блэк стрижет мужчину"
-              width="370"
-              height="346"
-            />
-            <h3 class="masters-list-title" lang="en">Alan Black</h3>
-            <p class="masters-list-text" lang="en">Extreme Barber</p>
-          </li>
-        </ul>
+      <section class="masters section">
+        <div class="container">
+          <p class="above-title title-dark">
+            для настоящих ценителей атмосферы
+          </p>
+          <h2 class="secondary-title title-dark masters-title">Наши мастера</h2>
+          <ul class="masters-list list">
+            <li class="masters-list-item">
+              <img
+                class="masters-list-img"
+                src="./img/john-smith.jpg"
+                alt="Джон Смит стрижет мужчину"
+                width="370"
+                height="346"
+              />
+              <div class="masters-list-item-container">
+                <h3 class="masters-list-title title-dark" lang="en">
+                  John Smith
+                </h3>
+                <p class="masters-list-text" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="masters-list-item">
+              <img
+                class="masters-list-img"
+                src="./img/michele-doe.jpg"
+                alt="Мишель Доу стрижет мужчину"
+                width="370"
+                height="346"
+              />
+              <div class="masters-list-item-container">
+                <h3 class="masters-list-title title-dark" lang="en">
+                  Michele Doe
+                </h3>
+                <p class="masters-list-text" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="masters-list-item">
+              <img
+                class="masters-list-img"
+                src="./img/alan-black.jpg"
+                alt="Алан Блэк стрижет мужчину"
+                width="370"
+                height="346"
+              />
+              <div class="masters-list-item-container">
+                <h3 class="masters-list-title title-dark" lang="en">
+                  Alan Black
+                </h3>
+                <p class="masters-list-text" lang="en">Extreme Barber</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- ======================== /НАШІ МАЙСТРИ======================== -->
 
       <!-- ======================== ГАЛЕРЕЯ ======================== -->
-      <section class="gallery">
+      <section class="gallery section">
         <h2 class="gallery-title">Галерея</h2>
-        <p class="above-title">На латинском языке &ldquo;барба&CloseCurlyDoubleQuote; означает &ldquo;борода&CloseCurlyDoubleQuote;</p>
+        <p class="above-title title-dark gallery-above-title">
+          На латинском языке &ldquo;барба&CloseCurlyDoubleQuote; означает
+          &ldquo;борода&CloseCurlyDoubleQuote;
+        </p>
         <ul class="gallery-list list">
           <li class="gallery-list-item">
             <img
@@ -283,35 +322,42 @@
       <!-- ======================== /ГАЛЕРЕЯ ======================== -->
 
       <!-- ======================== КОНТАКТИ ======================== -->
-      <section class="cont-section">
-        <h2 class="cont-section-title secondary-title">Контакты</h2>
+      <section class="cont-section section">
+        <h2 class="secondary-title title-light">Контакты</h2>
         <address class="cont-details">
           <ul class="cont-details-list list">
             <li class="cont-details-list-item">
               <a
-              class="cont-details-list-link link subtitle" 
-              href="https://goo.gl/maps/DyGyCrTGnRPpjsV19">
-              ул. Васильковая, 7А Киев, 08132
+                class="cont-details-list-link link subtitle"
+                href="https://goo.gl/maps/DyGyCrTGnRPpjsV19"
+              >
+                ул. Васильковая, 7А Киев, 08132
               </a>
             </li>
             <li class="cont-details-list-item">
-              <a 
-              class="cont-details-list-link link subtitle" 
-              href="tel:+380441111111">
-              +38 044 111 11 11
+              <a
+                class="cont-details-list-link link subtitle"
+                href="tel:+380441111111"
+              >
+                +38 044 111 11 11
               </a>
-          </li>
+            </li>
             <li class="cont-details-list-item">
-              <a 
-              class="cont-details-list-link" 
-              href="mailto:barbershop@email.com">
-              barbershop@email.com
+              <a
+                class="cont-details-list-link"
+                href="mailto:barbershop@email.com"
+              >
+                barbershop@email.com
               </a>
             </li>
           </ul>
         </address>
-        <h3 class="above-title cont-details-above-title">время работы</h3>
-        <p class="cont-details-above-text subtitle">Ежедневно с 9:00 до 22:00</p>
+        <h3 class="above-title title-light cont-details-above-title">
+          время работы
+        </h3>
+        <p class="cont-details-above-text subtitle">
+          Ежедневно с 9:00 до 22:00
+        </p>
       </section>
       <!-- ======================== /КОНТАКТИ ======================== -->
     </main>
@@ -321,13 +367,13 @@
     <footer class="footer">
       <p class="copyright above-title">&copy; Copyright 2020</p>
       <ul class="list soc-net-list">
-            <li class="soc-net-item">
-              <a class="link soc-net-link" href="" lang="en">Instagram</a>
-            </li>
-            <li class="soc-net-item">
-              <a class="link soc-net-link" href="" lang="en">Youtube</a>
-            </li>
-          </ul>
+        <li class="soc-net-item">
+          <a class="link soc-net-link" href="" lang="en">Instagram</a>
+        </li>
+        <li class="soc-net-item">
+          <a class="link soc-net-link" href="" lang="en">Youtube</a>
+        </li>
+      </ul>
     </footer>
     <!-- ======================== ПІДВАЛ ======================== -->
   </body>

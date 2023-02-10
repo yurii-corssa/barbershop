@@ -10,6 +10,43 @@
   --light-background-color: #f7f7f7;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .list {
   list-style: none;
 }
@@ -29,12 +66,13 @@ body {
 /* ======================== КОМПОНЕНТИ ======================== */
 
 .modal-btn {
+  padding: 11px 19px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border: 1px solid #ff6c00;
   border-radius: 25px;
 }
@@ -64,18 +102,27 @@ body {
   text-transform: uppercase;
 }
 
+.secondary-title {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
+.title-dark {
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+}
+
+.title-light {
+  color: var(--main-light-color);
+  margin-bottom: 44px;
+}
+
 .subtitle {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: var(--secondary-dark-color);
-}
-
-.secondary-title {
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  color: var(--main-dark-color);
 }
 
 .paragraph {
@@ -88,6 +135,34 @@ body {
 /* ======================== /КОМПОНЕНТИ ======================== */
 
 /* ======================== ШАПКА ======================== */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo {
+  margin-right: 71px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .menu-link {
   font-weight: 600;
   font-size: 12px;
@@ -105,12 +180,13 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-light-color);
+  margin-left: auto;
+  margin-right: 40px;
 }
 .main-number:hover,
 .main-number:focus {
   color: var(--active-color);
 }
-
 /* ======================== /ШАПКА ======================== */
 
 /* ======================== ГЕРОЙ ======================== */
@@ -134,7 +210,7 @@ body {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  color: var(--main-light-color);
+  padding-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -148,9 +224,8 @@ body {
   text-align: right;
   letter-spacing: 0.1em;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--secondary-light-color-alpha);
+  color: transparent;
   border: none;
-  cursor: pointer;
 }
 .btn-hero-item:hover,
 .btn-hero-item:focus {
@@ -169,10 +244,6 @@ body {
 
 .pricelist-above-title {
   color: var(--secondary-light-color-alpha);
-}
-
-.pricelist-title {
-  color: var(--main-light-color);
 }
 
 .pricelist-table-item {
@@ -208,13 +279,27 @@ body {
   background-color: var(--light-background-color);
 }
 
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.masters-list-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .masters-list-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.38;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--main-dark-color);
+  margin-bottom: 8px;
 }
 
 .masters-list-text {
@@ -224,11 +309,19 @@ body {
   letter-spacing: 0.02em;
   color: var(--active-color);
 }
+
+.masters-list-item-container {
+  padding-top: 30px;
+}
 /* ======================== /НАШІ МАЙСТРИ ======================== */
 
 /* ======================== ГАЛЕРЕЯ ======================== */
 .gallery-title {
   display: none;
+}
+
+.gallery-above-title {
+  margin-bottom: 44px;
 }
 /* ======================== /ГАЛЕРЕЯ ======================== */
 
@@ -237,17 +330,13 @@ body {
   background-color: #191c26;
 }
 
-.cont-section-title {
-  color: var(--main-light-color);
-}
-
 .cont-details-list-link {
   font-style: normal;
   color: var(--secondary-light-color);
 }
 
 .cont-details-above-title {
-  color: var(--main-light-color);
+  margin-bottom: 20px;
 }
 
 .cont-details-above-text {
