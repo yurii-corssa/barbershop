@@ -2,12 +2,12 @@
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --active-color: #ff6c00;
-  /* --main-light-color: #ffffff; */
-  --main-light-color: #000000;
+  --main-light-color: #ffffff;
   --main-dark-color: #303030;
   --secondary-light-color-alpha: rgba(157, 164, 189, 0.6);
   --secondary-light-color: #9da4bd;
   --secondary-dark-color: #555555;
+  --light-background-color: #f7f7f7;
 }
 
 .list {
@@ -22,17 +22,25 @@ body {
   font-family: var(--main-font);
 }
 
+.top-background-color {
+  background-color: #191c26;
+}
+
 /* ======================== КОМПОНЕНТИ ======================== */
 
-/* КНОПКИ */
-
-.modal-btn-dark {
+.modal-btn {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--main-light-color);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.modal-btn-dark {
+  color: var(--main-dark-color);
 }
 .modal-btn-dark:hover,
 .modal-btn-dark:focus {
@@ -40,17 +48,41 @@ body {
   color: var(--main-light-color);
 }
 .modal-btn-light {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--main-dark-color);
+  color: var(--main-light-color);
 }
 .modal-btn-light:hover,
 .modal-btn-light:focus {
   background-color: var(--active-color);
   color: var(--main-light-color);
+}
+
+.above-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: var(--secondary-dark-color);
+}
+
+.secondary-title {
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: var(--main-dark-color);
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-dark-color);
 }
 
 /* ======================== /КОМПОНЕНТИ ======================== */
@@ -78,23 +110,11 @@ body {
 .main-number:focus {
   color: var(--active-color);
 }
-.modal-btn-dark {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--main-light-color);
-  cursor: pointer;
-}
-.modal-btn-dark:hover,
-.modal-btn-dark:focus {
-  background-color: var(--active-color);
-  color: var(--main-light-color);
-}
+
 /* ======================== /ШАПКА ======================== */
 
 /* ======================== ГЕРОЙ ======================== */
+
 .soc-net-link {
   font-weight: 600;
   font-size: 11px;
@@ -106,12 +126,7 @@ body {
 .soc-net-link:active {
   color: var(--active-color);
 }
-.above-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.hero-above-title {
   color: var(--secondary-light-color-alpha);
 }
 .main-title {
@@ -121,11 +136,8 @@ body {
   letter-spacing: 0.05em;
   color: var(--main-light-color);
 }
-.under-title {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.66;
-  letter-spacing: 0.02em;
+
+.hero-subtitle {
   color: var(--secondary-light-color);
 }
 
@@ -135,11 +147,118 @@ body {
   line-height: 1.36;
   text-align: right;
   letter-spacing: 0.1em;
-  color: var(--main-light-color);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--secondary-light-color-alpha);
+  border: none;
   cursor: pointer;
 }
 .btn-hero-item:hover,
 .btn-hero-item:focus {
-  color: var(--secondary-light-color-alpha);
+  color: var(--main-light-color);
 }
 /* ======================== /ГЕРОЙ ======================== */
+
+/* ======================== ПРО НАС ======================== */
+
+/* ======================== /ПРО НАС ======================== */
+
+/* ======================== ПРАЙСЛИСТ ======================== */
+.pricelist {
+  background-color: #191c26;
+}
+
+.pricelist-above-title {
+  color: var(--secondary-light-color-alpha);
+}
+
+.pricelist-title {
+  color: var(--main-light-color);
+}
+
+.pricelist-table-item {
+  color: var(--secondary-light-color);
+}
+/* ======================== /ПРАЙСЛИСТ ======================== */
+
+/* ======================== ЧОМУ ЙДУТЬ ДО НАС ======================== */
+.to-us-list-item {
+  background-color: var(--light-background-color);
+}
+
+.to-us-list-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--main-dark-color);
+}
+
+.to-us-list-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--main-dark-color);
+}
+/* ======================== /ЧОМУ ЙДУТЬ ДО НАС ======================== */
+
+/* ======================== НАШІ МАЙСТРИ ======================== */
+.masters {
+  background-color: var(--light-background-color);
+}
+
+.masters-list-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-dark-color);
+}
+
+.masters-list-text {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--active-color);
+}
+/* ======================== /НАШІ МАЙСТРИ ======================== */
+
+/* ======================== ГАЛЕРЕЯ ======================== */
+.gallery-title {
+  display: none;
+}
+/* ======================== /ГАЛЕРЕЯ ======================== */
+
+/* ======================== КОНТАКТИ ======================== */
+.cont-section {
+  background-color: #191c26;
+}
+
+.cont-section-title {
+  color: var(--main-light-color);
+}
+
+.cont-details-list-link {
+  font-style: normal;
+  color: var(--secondary-light-color);
+}
+
+.cont-details-above-title {
+  color: var(--main-light-color);
+}
+
+.cont-details-above-text {
+  color: var(--secondary-light-color);
+}
+
+/* ======================== /КОНТАКТИ ======================== */
+
+/* ======================== ФУТЕР ======================== */
+.copyright {
+  text-transform: capitalize;
+  color: var(--secondary-light-color);
+}
+/* ======================== /ФУТЕР ======================== */ ;
