@@ -65,6 +65,10 @@ body {
 
 /* ======================== КОМПОНЕНТИ ======================== */
 
+.display-flex {
+  display: flex;
+}
+
 .modal-btn {
   padding: 11px 19px;
   font-weight: 600;
@@ -94,12 +98,26 @@ body {
   color: var(--main-light-color);
 }
 
+.btn-centr {
+  justify-content: center;
+}
+
 .above-title {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  align-items: center;
+}
+
+.above-title::before {
+  display: block;
+  width: 60px;
+  height: 1px;
+  content: "";
+  margin-right: 20px;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .secondary-title {
@@ -113,6 +131,10 @@ body {
   margin-bottom: 20px;
 }
 
+.title-dark::before {
+  background-color: var(--main-dark-color);
+}
+
 .title-light {
   color: var(--main-light-color);
   margin-bottom: 44px;
@@ -122,6 +144,7 @@ body {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
   color: var(--secondary-dark-color);
 }
 
@@ -129,7 +152,22 @@ body {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
   color: var(--secondary-dark-color);
+}
+
+.content-text-container {
+  width: 480px;
+}
+
+.elements-container {
+  flex-basis: 50%;
+}
+
+.elements-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 /* ======================== /КОМПОНЕНТИ ======================== */
@@ -191,6 +229,35 @@ body {
 
 /* ======================== ГЕРОЙ ======================== */
 
+.hero {
+  padding-bottom: 40px;
+}
+.left-hero {
+  width: 115px;
+}
+
+.right-hero {
+  flex-grow: 1;
+  padding-top: 154px;
+  padding-left: 100px;
+  padding-right: 55px;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../img/hero-background.jpg);
+  background-size: cover;
+  background-color: #303030;
+}
+
+.above-title {
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  justify-content: end;
+}
+
 .soc-net-link {
   font-weight: 600;
   font-size: 11px;
@@ -203,6 +270,7 @@ body {
   color: var(--active-color);
 }
 .hero-above-title {
+  margin-right: 20px;
   color: var(--secondary-light-color-alpha);
 }
 .main-title {
@@ -210,10 +278,12 @@ body {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
+  width: 380px;
+  margin-bottom: 142px;
   color: var(--secondary-light-color);
 }
 
@@ -223,8 +293,9 @@ body {
   line-height: 1.36;
   text-align: right;
   letter-spacing: 0.1em;
-  background-color: rgba(0, 0, 0, 0);
-  color: transparent;
+  margin-bottom: 49px;
+  background-color: transparent;
+  color: rgba(157, 164, 189, 0.6);
   border: none;
 }
 .btn-hero-item:hover,
@@ -234,6 +305,9 @@ body {
 /* ======================== /ГЕРОЙ ======================== */
 
 /* ======================== ПРО НАС ======================== */
+.about-img-container {
+  margin-right: 64px;
+}
 
 /* ======================== /ПРО НАС ======================== */
 
@@ -249,11 +323,35 @@ body {
 .pricelist-table-item {
   color: var(--secondary-light-color);
 }
+
+.pricelist-table {
+  width: 585px;
+}
+
+.pricelist-table-container {
+  margin-bottom: 50px;
+}
 /* ======================== /ПРАЙСЛИСТ ======================== */
 
 /* ======================== ЧОМУ ЙДУТЬ ДО НАС ======================== */
 .to-us-list-item {
+  width: 170px;
+  min-height: 134px;
+  padding: 21px;
   background-color: var(--light-background-color);
+}
+
+.to-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 370px;
+  margin: 0 auto;
+}
+
+.to-us-list-item:nth-child(2n) {
+  margin-top: 30px;
 }
 
 .to-us-list-title {
@@ -263,6 +361,14 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--main-dark-color);
+}
+
+.plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 57px;
+  vertical-align: top;
+  color: var(--active-color);
 }
 
 .to-us-list-text {
@@ -308,11 +414,43 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--active-color);
+  margin-bottom: 30px;
 }
 
 .masters-list-item-container {
   padding-top: 30px;
 }
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.masters-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* .masters-social-list-link:hover,
+.masters-social-list-link:focus {
+  background-color: #d4d4d4;
+} */
+
+.masters-social-list-icon {
+  fill: var(--main-dark-color);
+}
+
+.masters-social-list-link:hover .masters-social-list-icon,
+.masters-social-list-link:focus .masters-social-list-icon {
+  fill: var(--active-color);
+}
+
 /* ======================== /НАШІ МАЙСТРИ ======================== */
 
 /* ======================== ГАЛЕРЕЯ ======================== */
@@ -321,6 +459,7 @@ body {
 }
 
 .gallery-above-title {
+  display: flex;
   margin-bottom: 44px;
 }
 /* ======================== /ГАЛЕРЕЯ ======================== */
