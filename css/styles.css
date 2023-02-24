@@ -59,10 +59,6 @@ body {
   font-family: var(--main-font);
 }
 
-.top-background-color {
-  background-color: #191c26;
-}
-
 /* ======================== КОМПОНЕНТИ ======================== */
 
 .display-flex {
@@ -83,6 +79,7 @@ body {
 
 .modal-btn-dark {
   color: var(--main-dark-color);
+  transition: color 250ms ease, background-color 250ms ease;
 }
 .modal-btn-dark:hover,
 .modal-btn-dark:focus {
@@ -91,6 +88,7 @@ body {
 }
 .modal-btn-light {
   color: var(--main-light-color);
+  transition: color 250ms ease, background-color 250ms ease;
 }
 .modal-btn-light:hover,
 .modal-btn-light:focus {
@@ -176,6 +174,8 @@ body {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
 }
 
 .header-container {
@@ -207,6 +207,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-light-color);
+  transition: color 250ms ease;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -220,6 +221,7 @@ body {
   color: var(--main-light-color);
   margin-left: auto;
   margin-right: 40px;
+  transition: color 250ms ease;
 }
 .main-number:hover,
 .main-number:focus {
@@ -233,7 +235,30 @@ body {
   padding-bottom: 40px;
 }
 .left-hero {
-  width: 115px;
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  padding: 31px;
+}
+
+.soc-net-list {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg) translateX(-18px);
+  transform-origin: left top;
+}
+
+.soc-net-list::before {
+  flex-shrink: 0;
+  width: 60px;
+  height: 1px;
+  content: "";
+  margin-right: 40px;
+  background-color: var(--main-dark-color);
+}
+
+.soc-net-item:not(:last-child) {
+  padding-right: 40px;
 }
 
 .right-hero {
@@ -246,7 +271,7 @@ body {
       rgba(25, 28, 38, 0.2)
     ),
     url(../img/hero-background.jpg);
-  background-size: cover;
+  background-size: 1125px;
   background-color: #303030;
 }
 
@@ -264,6 +289,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--main-dark-color);
+  transition: color 250ms ease;
 }
 .soc-net-link:hover,
 .soc-net-link:active {
@@ -297,6 +323,7 @@ body {
   background-color: transparent;
   color: rgba(157, 164, 189, 0.6);
   border: none;
+  transition: color 250ms ease;
 }
 .btn-hero-item:hover,
 .btn-hero-item:focus {
