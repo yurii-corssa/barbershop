@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,194 +16,428 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- ======================== ШАПКА ======================== -->
+    <!-- ------------------------------- -->
+    <!-- ----------- HEADER ------------ -->
+    <!-- ------------------------------- -->
     <header class="header">
-      <div class="container header-container">
-        <nav class="top-nav">
-          <svg class="main-logo" height="55" width="69">
-            <use href="./img/sprite.svg#icon-logo"></use>
-          </svg>
-          <ul class="list menu-list">
-            <li class="menu-item">
-              <a class="link menu-link" href="#">О нас</a>
+      <div class="header__container container">
+        <nav class="main-nav-menu">
+          <a class="main-nav-menu__logo" href="./index.html">
+            <svg class="logo__icon" height="55" width="69">
+              <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="main-nav-menu__list-menu list">
+            <li class="main-nav-menu__list-item">
+              <a class="main-nav-menu__list-link link" href="#about">About</a>
             </li>
-            <li class="menu-item">
-              <a class="link menu-link" href="#">Услуги и цены</a>
+            <li class="main-nav-menu__list-item">
+              <a class="main-nav-menu__list-link link" href="#pricelist"
+                >Services and Prices</a
+              >
             </li>
-            <li class="menu-item">
-              <a class="link menu-link" href="#">Мастера</a>
+            <li class="main-nav-menu__list-item">
+              <a class="main-nav-menu__list-link link" href="#">Barbers</a>
             </li>
-            <li class="menu-item">
-              <a class="link menu-link" href="#">Контакты</a>
+            <li class="main-nav-menu__list-item">
+              <a class="main-nav-menu__list-link link" href="#">Contacts</a>
             </li>
           </ul>
+
+          <svg
+            class="burger-button-open-menu-mobile-icon"
+            width="40"
+            height="40"
+          >
+            <use href="./img/sprite.svg#burger-button-open-menu-mobile"></use>
+          </svg>
         </nav>
-        <a class="link main-number" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button class="modal-btn modal-btn-light" type="button">
-          онлайн-запись
-        </button>
+        <div class="header-right-element">
+          <a class="link main-number" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="modal-btn modal-btn-light" type="button">
+            book a Service
+          </button>
+        </div>
       </div>
     </header>
-    <!-- ======================== /ШАПКА ======================== -->
+    <!-- ------------- END ------------- -->
+    <!-- ----------- HEADER ------------ -->
 
-    <!-- ======================== ОСНОВА ======================== -->
     <main>
-      <!-- ======================== ГЕРОЙ ======================== -->
+      <!-- ------------------------------- -->
+      <!-- ------------ HERO ------------- -->
+      <!-- ------------------------------- -->
       <section class="hero">
         <div class="container hero-container display-flex">
-          <!-- === ЛІВА ЧАСТИНА === -->
+          <!-- ------------------------------- -->
+          <!-- ---------- LEFT SIDE ---------- -->
           <div class="left-hero">
             <ul class="list soc-net-list">
               <li class="soc-net-item">
-                <a class="link soc-net-link" href="" lang="en">Instagram</a>
+                <a class="link soc-net-link" href="">Instagram</a>
               </li>
               <li class="soc-net-item">
-                <a class="link soc-net-link" href="" lang="en">Youtube</a>
+                <a class="link soc-net-link" href="">Youtube</a>
               </li>
             </ul>
           </div>
-          <!-- === /ЛІВА ЧАСТИНА === -->
+          <!-- -------- END LEFT SIDE -------- -->
 
-          <!-- === ПРАВА ЧАСТИНА === -->
+          <!-- ------------------------------- -->
+          <!-- --------- RIGHT SIDE ---------- -->
           <div class="right-hero">
-            <p class="above-title display-flex hero-above-title" lang="en">
-              A hair salon for men in Kyiv
-            </p>
-            <h1 class="main-title title-light" lang="en">BarberShop</h1>
-            <p class="subtitle hero-subtitle" lang="en">
-              We are experts in trendy men's haircuts. We work quickly,
-              carefully, and tastefully.
-            </p>
+            <div class="right-hero-text-wrapper">
+              <p class="hero__tagline-title tagline-title">
+                A hair salon for men in Kyiv
+              </p>
+              <h1
+                class="main-title light-title"
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+              >
+                BarberShop
+              </h1>
+              <p
+                class="subtitle hero-subtitle"
+                data-aos="fade-right"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="200"
+              >
+                We are experts in trendy men's haircuts. We work quickly,
+                carefully, and tastefully.
+              </p>
+            </div>
 
-            <ul class="list btn-hero display-flex">
+            <ul class="list slider-btn-hero display-flex">
               <li>
-                <button class="btn-hero-item" type="button">Назад</button>
+                <button
+                  class="slider-btn-hero-item slider-btn-hero-item-back"
+                  type="button"
+                >
+                  Back
+                </button>
               </li>
               <li>
-                <button class="btn-hero-item" type="button">Вперед</button>
+                <button
+                  class="slider-btn-hero-item slider-btn-hero-item-next"
+                  type="button"
+                  disabled
+                >
+                  Next
+                </button>
               </li>
             </ul>
           </div>
-          <!-- === /ПРАВА ЧАСТИНА === -->
+          <!-- ------- END RIGHT SIDE -------- -->
         </div>
       </section>
-      <!-- ======================== /ГЕРОЙ ======================== -->
+      <!-- ------------- END ------------- -->
+      <!-- ------------ HERO ------------- -->
 
-      <!-- ======================== ПРО НАС ======================== -->
-      <section class="about section">
-        <div class="container display-flex about-container">
-          <div class="about-img-container">
-            <ul class="about-list list elements-flex-container">
-              <li class="about-list-item">
-                <img
-                  class="about-list-img"
-                  src="./img/beard-cutting-1.jpg"
-                  alt="стрижка бороды"
-                  height="445"
-                  width="270"
-                />
+      <!-- ------------------------------- -->
+      <!-- ------------ ABOUT ------------ -->
+      <!-- ------------------------------- -->
+      <section class="about section" id="about">
+        <div class="about__container container">
+          <div class="about__img">
+            <ul class="about__list list">
+              <li class="list__item-about">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-beard-tablet.webp    1x,
+                      ./img/main-page/about/haircut-beard-tablet@2x.webp 2x,
+                      ./img/main-page/about/haircut-beard-tablet@3x.webp 3x
+                    "
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-beard-tablet.jpg    1x,
+                      ./img/main-page/about/haircut-beard-tablet@2x.jpg 2x,
+                      ./img/main-page/about/haircut-beard-tablet@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-beard-desktop.webp    1x,
+                      ./img/main-page/about/haircut-beard-desktop@2x.webp 2x,
+                      ./img/main-page/about/haircut-beard-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-beard-desktop.jpg    1x,
+                      ./img/main-page/about/haircut-beard-desktop@2x.jpg 2x,
+                      ./img/main-page/about/haircut-beard-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="item-about__img"
+                    src="./img/main-page/about/haircut-beard-desktop.jpg"
+                    alt="Haircut of a beard"
+                  />
+                </picture>
               </li>
-              <li class="about-list-item">
-                <img
-                  class="about-list-img"
-                  src="./img/beard-cutting-2.jpg"
-                  alt="стрижка бороды"
-                  height="445"
-                  width="270"
-                />
+              <li class="list__item-about">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-head-tablet.webp    1x,
+                      ./img/main-page/about/haircut-head-tablet@2x.webp 2x,
+                      ./img/main-page/about/haircut-head-tablet@3x.webp 3x
+                    "
+                    media="(max-width: 1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-head-tablet.jpg    1x,
+                      ./img/main-page/about/haircut-head-tablet@2x.jpg 2x,
+                      ./img/main-page/about/haircut-head-tablet@3x.jpg 3x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-head-desktop.webp    1x,
+                      ./img/main-page/about/haircut-head-desktop@2x.webp 2x,
+                      ./img/main-page/about/haircut-head-desktop@3x.webp 3x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/main-page/about/haircut-head-desktop.jpg    1x,
+                      ./img/main-page/about/haircut-head-desktop@2x.jpg 2x,
+                      ./img/main-page/about/haircut-head-desktop@3x.jpg 3x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    class="item-about__img"
+                    src="./img/main-page/about/haircut-head-desktop.jpg"
+                    alt="Haircut of the head"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
-          <div class="content-text-container">
-            <h2 class="above-title title-dark display-flex">О НАС</h2>
-            <h3 class="secondary-title title-dark">
-              Лучший Барбершоп твоего города
+          <div class="about__content">
+            <h2 class="about__tagline-title tagline-title dark-title">about</h2>
+            <h3
+              class="about__title dark-title"
+              data-aos="fade-left"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+            >
+              The Best Barbershop in Your City
             </h3>
-            <p class="subtitle">
-              Если ты хочешь добавить в свой образ больше уверенности – тебе
-              точно к нам.
+            <p
+              class="about__subtitle subtitle"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+            >
+              If you want to add more confidence to your image, you are
+              definitely in the right place.
             </p>
-            <p class="paragraph">
-              Мы команда, которая никогда не останавливается на достигнутом и
-              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
-              никогда не сможешь быть прежним. Мы команда, которая всегда с
-              клиентами "на одной волне". Поэтому, мы всегда готовы
-              усовершенствовать каждого, кто к нам приходит!
+            <p
+              class="about__paragraph paragraph"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+              data-aos-delay="100"
+            >
+              We are a team that never rests on its laurels and yearns for
+              change. And once you fall into the hands of our master, you will
+              never be the same again. We are a team that is always on the same
+              wavelength with clients. Therefore, we are always ready to improve
+              everyone who comes to us!
             </p>
-            <button class="modal-btn modal-btn-dark">онлайн-запись</button>
+            <button class="modal-btn modal-btn-dark">book a service</button>
           </div>
         </div>
       </section>
-      <!-- ======================== /ПРО НАС ======================== -->
+      <!-- ------------- END ------------- -->
+      <!-- ------------ ABOUT ------------ -->
 
-      <!-- ======================== ПРАЙСЛИСТ ======================== -->
-      <section class="pricelist section">
-        <div class="container">
-          <p class="above-title display-flex pricelist-above-title">
-            Проведи время в компании лучших мастеров
+      <!-- ------------------------------- -->
+      <!-- --------- PRICE LIST ---------- -->
+      <!-- ------------------------------- -->
+      <section class="pricelist section" id="pricelist">
+        <div class="pricelist__container container">
+          <p class="pricelist__tagline-title tagline-title">
+            Spend time in the company of the best craftsmen
           </p>
-          <h2 class="secondary-title title-light">Услуги и цены</h2>
-          <div class="pricelist-table-container display-flex">
-            <table class="pricelist-table">
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">Мужская стрижка</td>
-                <td class="pricelist-table-item subtitle">от 300 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">Стрижка бороды</td>
-                <td class="pricelist-table-item subtitle">от 200 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">Стрижка усов</td>
-                <td class="pricelist-table-item subtitle">от 200 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">
-                  Бритье опасной бритвой
-                </td>
-                <td class="pricelist-table-item subtitle">от 200 грн.</td>
-              </tr>
-            </table>
-            <table class="pricelist-table">
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">Cтрижка у стажера</td>
-                <td class="pricelist-table-item subtitle">от 50 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">
-                  Стрижка под насадку
-                </td>
-                <td class="pricelist-table-item subtitle">от 200 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">
-                  Детская стрижка (до 12 лет)
-                </td>
-                <td class="pricelist-table-item subtitle">от 300 грн.</td>
-              </tr>
-              <tr class="pricelist-table-row">
-                <td class="pricelist-table-item subtitle">
-                  Камуфлирование седины
-                </td>
-                <td class="pricelist-table-item subtitle">от 200 грн.</td>
-              </tr>
+
+          <h2
+            class="pricelist__title title light-title"
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-duration="600"
+          >
+            Services and Prices
+          </h2>
+
+          <div class="pricelist__table-wrapper">
+            <!-- ------------------------------- -->
+            <table class="pricelist__table">
+              <!-- ------------------------------- -->
+              <tbody class="pricelist__table-body">
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Men's Haircut</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 300 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Beard Trim</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+
+                  <td class="pricelist__table-cell">from 200 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Mustache Trim</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+
+                  <td class="pricelist__table-cell">from 200 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Straight Razor Shave</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 200 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+              </tbody>
+
+              <tbody class="pricelist__table-body">
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Trainee Haircut</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 50 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Buzz Cut</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 200 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">
+                    Kids Haircut (&LT;12 y.o.)
+                  </td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 300 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+                <tr
+                  class="pricelist__table-row"
+                  data-aos="zoom-out-up"
+                  data-aos-easing="ease"
+                  data-aos-duration="600"
+                  data-aos-offset="10"
+                >
+                  <td class="pricelist__table-cell">Gray Coverage</td>
+                  <td
+                    class="pricelist__table-cell pricelist__table-cell_border"
+                  ></td>
+                  <td class="pricelist__table-cell">from 200 UAH</td>
+                </tr>
+                <!-- ------------------------------- -->
+              </tbody>
             </table>
           </div>
+
           <div class="display-flex btn-centr">
             <button class="modal-btn modal-btn-light" type="button">
-              онлайн-запись
+              book a service
             </button>
           </div>
         </div>
       </section>
-      <!-- ======================== /ПРАЙСЛИСТ ======================== -->
+      <!-- ------------- END ------------- -->
+      <!-- --------- PRICE LIST ---------- -->
 
       <!-- ======================== ЧОМУ ЙДУТЬ ДО НАС ======================== -->
-      <section class="to-us section">
+      <!-- <section class="to-us section">
         <div class="container display-flex">
           <div class="elements-container">
             <ul class="to-us-list">
@@ -226,10 +460,10 @@
             </ul>
           </div>
           <div class="content-text-container">
-            <p class="above-title display-flex title-dark">
+            <p class="above-title display-flex dark-title">
               старая традиционная школа
             </p>
-            <h2 class="secondary-title title-dark">
+            <h2 class="secondary-title dark-title">
               Почему приходят именно к нам?
             </h2>
             <p class="subtitle">
@@ -238,16 +472,16 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- ======================== /ЧОМУ ЙДУТЬ ДО НАС ======================== -->
 
       <!-- ======================== НАШІ МАЙСТРИ ======================== -->
-      <section class="masters section">
+      <!-- <section class="masters section">
         <div class="container">
-          <p class="above-title display-flex title-dark">
+          <p class="above-title display-flex dark-title">
             для настоящих ценителей атмосферы
           </p>
-          <h2 class="secondary-title title-dark masters-title">Наши мастера</h2>
+          <h2 class="secondary-title dark-title masters-title">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-list-item">
               <img
@@ -258,7 +492,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title title-dark" lang="en">
+                <h3 class="masters-list-title dark-title" lang="en">
                   John Smith
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -319,7 +553,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title title-dark" lang="en">
+                <h3 class="masters-list-title dark-title" lang="en">
                   Michele Doe
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -380,7 +614,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title title-dark" lang="en">
+                <h3 class="masters-list-title dark-title" lang="en">
                   Alan Black
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -434,13 +668,13 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ======================== /НАШІ МАЙСТРИ======================== -->
 
       <!-- ======================== ГАЛЕРЕЯ ======================== -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <h2 class="gallery-title">Галерея</h2>
-        <p class="above-title title-dark gallery-above-title">
+        <p class="above-title dark-title gallery-above-title">
           На латинском языке &ldquo;барба&CloseCurlyDoubleQuote; означает
           &ldquo;борода&CloseCurlyDoubleQuote;
         </p>
@@ -478,12 +712,12 @@
             />
           </li>
         </ul>
-      </section>
+      </section> -->
       <!-- ======================== /ГАЛЕРЕЯ ======================== -->
 
       <!-- ======================== КОНТАКТИ ======================== -->
-      <section class="cont-section section">
-        <h2 class="secondary-title title-light">Контакты</h2>
+      <!-- <section class="cont-section section">
+        <h2 class="secondary-title light-title">Контакты</h2>
         <address class="cont-details">
           <ul class="cont-details-list list">
             <li class="cont-details-list-item">
@@ -512,19 +746,19 @@
             </li>
           </ul>
         </address>
-        <h3 class="above-title title-light cont-details-above-title">
+        <h3 class="above-title light-title cont-details-above-title">
           время работы
         </h3>
         <p class="cont-details-above-text subtitle">
           Ежедневно с 9:00 до 22:00
         </p>
-      </section>
+      </section> -->
       <!-- ======================== /КОНТАКТИ ======================== -->
     </main>
     <!-- ======================== /ОСНОВА ======================== -->
 
     <!-- ======================== ПІДВАЛ ======================== -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <p class="copyright above-title">&copy; Copyright 2020</p>
       <ul class="list soc-net-list">
         <li class="soc-net-item">
@@ -534,7 +768,12 @@
           <a class="link soc-net-link" href="" lang="en">Youtube</a>
         </li>
       </ul>
-    </footer>
+    </footer> -->
     <!-- ======================== ПІДВАЛ ======================== -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
