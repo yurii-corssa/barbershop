@@ -73,17 +73,18 @@
       <!-- ------------------------------- -->
       <!-- ------------ HERO ------------- -->
       <!-- ------------------------------- -->
+      <!-- <div class="cube"></div> -->
       <section class="hero">
-        <div class="container hero-container display-flex">
+        <div class="hero__container container">
           <!-- ------------------------------- -->
           <!-- ---------- LEFT SIDE ---------- -->
-          <div class="left-hero">
-            <ul class="list soc-net-list">
-              <li class="soc-net-item">
-                <a class="link soc-net-link" href="">Instagram</a>
+          <div class="hero__left-side">
+            <ul class="hero__soc-list list">
+              <li class="soc-list__item">
+                <a class="soc-list__link link" href="">Instagram</a>
               </li>
-              <li class="soc-net-item">
-                <a class="link soc-net-link" href="">Youtube</a>
+              <li class="soc-list__item">
+                <a class="soc-list__link link" href="">Youtube</a>
               </li>
             </ul>
           </div>
@@ -91,21 +92,19 @@
 
           <!-- ------------------------------- -->
           <!-- --------- RIGHT SIDE ---------- -->
-          <div class="right-hero">
-            <div class="right-hero-text-wrapper">
-              <p class="hero__tagline-title tagline-title">
-                A hair salon for men in Kyiv
-              </p>
+          <div class="hero__right-side">
+            <div class="hero__content content__text-wrapper">
+              <p class="hero__label label">A hair salon for men in Kyiv</p>
               <h1
-                class="main-title light-title"
+                class="main-title light-text"
                 data-aos="fade-right"
                 data-aos-easing="ease"
                 data-aos-duration="600"
               >
-                BarberShop
+                Barber Shop
               </h1>
               <p
-                class="subtitle hero-subtitle"
+                class="hero__subtitle"
                 data-aos="fade-right"
                 data-aos-easing="ease"
                 data-aos-duration="600"
@@ -115,11 +114,10 @@
                 carefully, and tastefully.
               </p>
             </div>
-
-            <ul class="list slider-btn-hero display-flex">
+            <ul class="list hero__slider-btn-list">
               <li>
                 <button
-                  class="slider-btn-hero-item slider-btn-hero-item-back"
+                  class="hero__slider-btn-item hero__slider-btn-item-back"
                   type="button"
                 >
                   Back
@@ -127,7 +125,7 @@
               </li>
               <li>
                 <button
-                  class="slider-btn-hero-item slider-btn-hero-item-next"
+                  class="hero__slider-btn-item hero__slider-btn-item-next"
                   type="button"
                   disabled
                 >
@@ -240,37 +238,39 @@
             </ul>
           </div>
           <div class="about__content">
-            <h2 class="about__tagline-title tagline-title dark-title">about</h2>
-            <h3
-              class="about__title dark-title"
-              data-aos="fade-left"
-              data-aos-easing="ease"
-              data-aos-duration="600"
-            >
-              The Best Barbershop in Your City
-            </h3>
-            <p
-              class="about__subtitle subtitle"
-              data-aos="fade-up"
-              data-aos-easing="ease"
-              data-aos-duration="600"
-            >
-              If you want to add more confidence to your image, you are
-              definitely in the right place.
-            </p>
-            <p
-              class="about__paragraph paragraph"
-              data-aos="fade-up"
-              data-aos-easing="ease"
-              data-aos-duration="600"
-              data-aos-delay="100"
-            >
-              We are a team that never rests on its laurels and yearns for
-              change. And once you fall into the hands of our master, you will
-              never be the same again. We are a team that is always on the same
-              wavelength with clients. Therefore, we are always ready to improve
-              everyone who comes to us!
-            </p>
+            <div class="text-wrapper_about content__text-wrapper">
+              <h2 class="about__label label dark-text">about</h2>
+              <h3
+                class="about__title dark-text"
+                data-aos="fade-left"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+              >
+                The Best Barbershop in Your City
+              </h3>
+              <p
+                class="about__subtitle"
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+              >
+                If you want to add more confidence to your image, you are
+                definitely in the right place.
+              </p>
+              <p
+                class="about__paragraph paragraph"
+                data-aos="fade-up"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="100"
+              >
+                We are a team that never rests on its laurels and yearns for
+                change. And once you fall into the hands of our master, you will
+                never be the same again. We are a team that is always on the
+                same wavelength with clients. Therefore, we are always ready to
+                improve everyone who comes to us!
+              </p>
+            </div>
             <button class="modal-btn modal-btn-dark">book a service</button>
           </div>
         </div>
@@ -283,25 +283,24 @@
       <!-- ------------------------------- -->
       <section class="pricelist section" id="pricelist">
         <div class="pricelist__container container">
-          <p class="pricelist__tagline-title tagline-title">
-            Spend time in the company of the best craftsmen
-          </p>
+          <div class="text-wrapper__pricelist content__text-wrapper">
+            <p class="pricelist__label label">
+              Spend time in the company of the best craftsmen
+            </p>
 
-          <h2
-            class="pricelist__title title light-title"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="600"
-          >
-            Services and Prices
-          </h2>
+            <h2
+              class="pricelist__title title light-text"
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+            >
+              Services and Prices
+            </h2>
+          </div>
 
           <div class="pricelist__table-wrapper">
-            <!-- ------------------------------- -->
             <table class="pricelist__table">
-              <!-- ------------------------------- -->
               <tbody class="pricelist__table-body">
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -315,7 +314,6 @@
                   ></td>
                   <td class="pricelist__table-cell">from 300 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -330,7 +328,6 @@
 
                   <td class="pricelist__table-cell">from 200 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -345,7 +342,6 @@
 
                   <td class="pricelist__table-cell">from 200 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -359,11 +355,9 @@
                   ></td>
                   <td class="pricelist__table-cell">from 200 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
               </tbody>
 
               <tbody class="pricelist__table-body">
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -377,7 +371,6 @@
                   ></td>
                   <td class="pricelist__table-cell">from 50 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -391,7 +384,6 @@
                   ></td>
                   <td class="pricelist__table-cell">from 200 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -407,7 +399,6 @@
                   ></td>
                   <td class="pricelist__table-cell">from 300 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
                 <tr
                   class="pricelist__table-row"
                   data-aos="zoom-out-up"
@@ -421,7 +412,6 @@
                   ></td>
                   <td class="pricelist__table-cell">from 200 UAH</td>
                 </tr>
-                <!-- ------------------------------- -->
               </tbody>
             </table>
           </div>
@@ -436,52 +426,87 @@
       <!-- ------------- END ------------- -->
       <!-- --------- PRICE LIST ---------- -->
 
-      <!-- ======================== ЧОМУ ЙДУТЬ ДО НАС ======================== -->
-      <!-- <section class="to-us section">
-        <div class="container display-flex">
-          <div class="elements-container">
-            <ul class="to-us-list">
-              <li class="to-us-list-item list">
-                <p class="to-us-list-title">600<sup class="plus">+</sup></p>
-                <p class="to-us-list-text">Довольных клиентов в день</p>
+      <!-- ------------------------------- -->
+      <!-- ----------- WHY US ------------ -->
+      <!-- ------------------------------- -->
+      <section class="why-use section" id="why-use">
+        <div class="why-use__container container">
+          <div class="why-use__features">
+            <ul class="features__list list">
+              <li
+                class="list__item-features"
+                data-aos="zoom-out"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="200"
+              >
+                <p class="list__label-features">600<sup>+</sup></p>
+                <p class="list__text-features">Satisfied Customers per Day</p>
               </li>
-              <li class="to-us-list-item list">
-                <p class="to-us-list-title">50<sup class="plus">+</sup></p>
-                <p class="to-us-list-text">Наград за отличный сервис</p>
+              <li
+                class="list__item-features"
+                data-aos="zoom-out"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="300"
+              >
+                <p class="list__label-features">50<sup>+</sup></p>
+                <p class="list__text-features">Excellent Service Awards</p>
               </li>
-              <li class="to-us-list-item list">
-                <p class="to-us-list-title">20<sup class="plus">+</sup></p>
-                <p class="to-us-list-text">Лучших мастеров Киева</p>
+              <li
+                class="list__item-features"
+                data-aos="zoom-out"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="400"
+              >
+                <p class="list__label-features">20<sup>+</sup></p>
+                <p class="list__text-features">The Best Barbers of Kyiv</p>
               </li>
-              <li class="to-us-list-item list">
-                <p class="to-us-list-title">100<sup class="plus">+</sup></p>
-                <p class="to-us-list-text">Подарков постоянным клиентам</p>
+              <li
+                class="list__item-features"
+                data-aos="zoom-out"
+                data-aos-easing="ease"
+                data-aos-duration="600"
+                data-aos-delay="500"
+              >
+                <p class="list__label-features">100<sup>+</sup></p>
+                <p class="list__text-features">Gifts for Regular Customers</p>
               </li>
             </ul>
           </div>
-          <div class="content-text-container">
-            <p class="above-title display-flex dark-title">
-              старая традиционная школа
-            </p>
-            <h2 class="secondary-title dark-title">
-              Почему приходят именно к нам?
+          <div class="why-use__content content__text-wrapper">
+            <p class="why-use__label label dark-text">Old school</p>
+            <h2
+              class="why-use__title title dark-text"
+              data-aos="fade-left"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+            >
+              Why do they come to us?
             </h2>
-            <p class="subtitle">
-              О нас говорят только хорошее. Но лучше 1 раз увидеть и
-              прочувствовать, чем 10 раз прочитать.
+            <p
+              class="why-use__subtitle subtitle"
+              data-aos="fade-up"
+              data-aos-easing="ease"
+              data-aos-duration="600"
+            >
+              Only good things are said about us. But it is better to see and
+              feel 1 time than to read 10 times.
             </p>
           </div>
         </div>
-      </section> -->
-      <!-- ======================== /ЧОМУ ЙДУТЬ ДО НАС ======================== -->
+      </section>
+      <!-- ------------- END ------------- -->
+      <!-- ----------- WHY US ------------ -->
 
       <!-- ======================== НАШІ МАЙСТРИ ======================== -->
       <!-- <section class="masters section">
         <div class="container">
-          <p class="above-title display-flex dark-title">
+          <p class="above-title display-flex dark-text">
             для настоящих ценителей атмосферы
           </p>
-          <h2 class="secondary-title dark-title masters-title">Наши мастера</h2>
+          <h2 class="secondary-title dark-text masters-title">Наши мастера</h2>
           <ul class="masters-list list">
             <li class="masters-list-item">
               <img
@@ -492,7 +517,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title dark-title" lang="en">
+                <h3 class="masters-list-title dark-text" lang="en">
                   John Smith
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -553,7 +578,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title dark-title" lang="en">
+                <h3 class="masters-list-title dark-text" lang="en">
                   Michele Doe
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -614,7 +639,7 @@
                 height="346"
               />
               <div class="masters-list-item-container">
-                <h3 class="masters-list-title dark-title" lang="en">
+                <h3 class="masters-list-title dark-text" lang="en">
                   Alan Black
                 </h3>
                 <p class="masters-list-text" lang="en">Extreme Barber</p>
@@ -674,7 +699,7 @@
       <!-- ======================== ГАЛЕРЕЯ ======================== -->
       <!-- <section class="gallery section">
         <h2 class="gallery-title">Галерея</h2>
-        <p class="above-title dark-title gallery-above-title">
+        <p class="above-title dark-text gallery-above-title">
           На латинском языке &ldquo;барба&CloseCurlyDoubleQuote; означает
           &ldquo;борода&CloseCurlyDoubleQuote;
         </p>
@@ -717,7 +742,7 @@
 
       <!-- ======================== КОНТАКТИ ======================== -->
       <!-- <section class="cont-section section">
-        <h2 class="secondary-title light-title">Контакты</h2>
+        <h2 class="secondary-title light-text">Контакты</h2>
         <address class="cont-details">
           <ul class="cont-details-list list">
             <li class="cont-details-list-item">
@@ -746,7 +771,7 @@
             </li>
           </ul>
         </address>
-        <h3 class="above-title light-title cont-details-above-title">
+        <h3 class="above-title light-text cont-details-above-title">
           время работы
         </h3>
         <p class="cont-details-above-text subtitle">
@@ -761,11 +786,11 @@
     <!-- <footer class="footer">
       <p class="copyright above-title">&copy; Copyright 2020</p>
       <ul class="list soc-net-list">
-        <li class="soc-net-item">
-          <a class="link soc-net-link" href="" lang="en">Instagram</a>
+        <li class="soc-list__item">
+          <a class="soc-list__link link" href="" lang="en">Instagram</a>
         </li>
-        <li class="soc-net-item">
-          <a class="link soc-net-link" href="" lang="en">Youtube</a>
+        <li class="soc-list__item">
+          <a class="soc-list__link link" href="" lang="en">Youtube</a>
         </li>
       </ul>
     </footer> -->
