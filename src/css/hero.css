@@ -1,0 +1,223 @@
+.hero {
+  position: relative;
+  padding-top: 208px;
+  padding-bottom: 183px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero__title {
+  word-spacing: -0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.hero__subtitle {
+  line-height: 162.5%; /* 26/16 */
+  letter-spacing: 0.02em;
+  max-width: 306px;
+}
+
+.hero__socials {
+  display: none;
+}
+
+.hero__socials::before {
+  content: "";
+  width: 1px;
+  height: 60px;
+  background-color: var(--main-dark-color);
+}
+
+.hero__social-link {
+  transform: scale(-1, -1);
+  writing-mode: vertical-rl;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-dark-color);
+  transition: color 250ms ease;
+}
+
+.hero__social-link:hover,
+.hero__social-link:focus {
+  color: var(--active-color);
+}
+
+.hero__slider {
+  display: none;
+}
+
+.hero__slider-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  transition: color 250ms ease;
+}
+
+.hero__slider-btn:hover {
+  color: var(--active-color);
+}
+
+.hero__slider-btn[disabled] {
+  color: var(--secondary-light-color-alpha);
+  cursor: default;
+}
+
+@media only screen and (max-width: 479px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/main-page/hero/slider-background-mobile-1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/main-page/hero/slider-background-mobile-1@2x.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/main-page/hero/slider-background-mobile-1@3x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/main-page/hero/slider-background-tablet-1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/main-page/hero/slider-background-tablet-1@2x.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(../img/main-page/hero/slider-background-tablet-1@3x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 272px;
+    padding-bottom: 245px;
+    padding-left: 240px;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../img/main-page/hero/slider-background-desktop-1.jpg);
+  }
+
+  .hero__subtitle {
+    min-width: 380px;
+  }
+
+  .hero__socials {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+    width: 120px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    background-color: var(--main-light-color);
+  }
+
+  .hero__slider {
+    position: absolute;
+    right: 39px;
+    bottom: 40px;
+    display: flex;
+    gap: 26px;
+  }
+
+  .hero__slider *::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+
+  .hero__slider > :last-child {
+    align-items: end;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 1.16;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 72px;
+    line-height: 118.06%; /* 85/72 */
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+    line-height: 166.67%; /* 30/18 */
+  }
+
+  .hero__socials {
+    width: 115px;
+    padding-right: 40px;
+  }
+
+  .hero__slider {
+    right: 55px;
+  }
+}

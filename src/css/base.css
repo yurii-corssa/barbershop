@@ -1,0 +1,108 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --active-color: #ff6c00;
+  --main-light-color: #ffffff;
+  --main-dark-color: #303030;
+  --secondary-light-color-alpha: rgba(157, 164, 189, 0.6);
+  --secondary-light-color: #9da4bd;
+  --secondary-dark-color: #555555;
+  --light-background-color: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.section {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 84px 31px;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 100px 39px;
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section {
+    padding: 130px 55px;
+    max-width: 1280px;
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 136.36%; /* 15/11 */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.label::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--secondary-light-color-alpha);
+}
+
+.light {
+  color: var(--main-dark-color);
+}
+
+.light-secondary {
+  color: var(--secondary-light-color);
+}
+
+.light-secondary-alpha {
+  color: var(--secondary-light-color-alpha);
+}
+
+.dark {
+  color: var(--main-light-color);
+}
+
+/* 
+.container {
+  padding: 0 31px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 39px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 0 55px;
+  }
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
