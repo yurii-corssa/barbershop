@@ -66,7 +66,8 @@
   transition: color 250ms ease;
 }
 
-.hero__slider-btn:hover {
+.hero__slider-btn:hover,
+.hero__slider-btn:focus {
   color: var(--active-color);
 }
 
@@ -168,7 +169,8 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 40px;
-    width: 120px;
+    width: 159px;
+    padding-left: 39px;
     padding-right: 30px;
     padding-bottom: 40px;
     background-color: var(--main-light-color);
@@ -213,8 +215,8 @@
   }
 
   .hero__socials {
-    width: 115px;
-    padding-right: 40px;
+    width: 155px;
+    padding-left: 55px;
   }
 
   .hero__slider {
