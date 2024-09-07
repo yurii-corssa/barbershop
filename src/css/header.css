@@ -26,28 +26,27 @@
   transition: color 250ms ease;
 }
 
+.header__logo {
+  transition: color 250ms ease;
+}
+
+.header__logo-icon {
+  fill: currentColor;
+}
+
 .header__nav-link:hover,
 .header__nav-link:focus,
 .header__phone:hover,
-.header__phone:focus {
+.header__phone:focus,
+.header__logo:hover,
+.header__logo:focus {
   color: var(--active-color);
-}
-
-@media only screen and (max-width: 767px) {
-  .header__logo-icon {
-    fill: currentColor;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .header__logo-icon {
-    fill: var(--main-dark-color);
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .header__logo {
     padding-left: 11px;
+    color: var(--main-dark-color);
   }
 }
 
@@ -58,6 +57,7 @@
 
   .header__logo {
     margin-right: 130px;
+    color: var(--main-dark-color);
   }
 
   .header__nav {

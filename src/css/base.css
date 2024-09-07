@@ -58,32 +58,37 @@ body {
   width: 60px;
   height: 1px;
   margin-right: 20px;
-  background-color: var(--secondary-light-color-alpha);
+  background-color: currentColor;
 }
 
-.light {
-  color: var(--main-dark-color);
+.light-text {
+  color: var(--main-light-color);
 }
 
-.light-secondary {
+.light-second-text {
   color: var(--secondary-light-color);
 }
 
-.light-secondary-alpha {
+.light-alpha-text {
   color: var(--secondary-light-color-alpha);
 }
 
 .dark {
-  color: var(--main-light-color);
+  color: var(--main-dark-color);
+}
+
+.dark-second-text {
+  color: var(--secondary-dark-color);
 }
 
 .cta-btn {
-  padding: 11px 19px;
   font-weight: 600;
   font-size: 12px;
   line-height: 133.33%; /* 16/12 */
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  width: fit-content;
+  padding: 11px 19px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   transition: all 250ms ease;
@@ -103,6 +108,12 @@ body {
 .burger-btn:hover,
 .burger-btn:focus {
   color: var(--active-color);
+}
+
+.title {
+  font-size: 42px;
+  line-height: 116.67%; /* 49/42 */
+  letter-spacing: 0.05em;
 }
 
 .visually-hidden {
