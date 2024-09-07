@@ -82,7 +82,7 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../img/main-page/hero/slider-background-mobile-1.jpg);
+      url(/img/main-page/hero/slider-background-mobile-1@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -93,7 +93,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../img/main-page/hero/slider-background-mobile-1@2x.jpg);
+        url(/img/main-page/hero/slider-background-mobile-1@2x.webp);
     }
   }
 
@@ -105,7 +105,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../img/main-page/hero/slider-background-mobile-1@3x.jpg);
+        url(/img/main-page/hero/slider-background-mobile-1@3x.webp);
     }
   }
 }
@@ -116,7 +116,7 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../img/main-page/hero/slider-background-tablet-1.jpg);
+      url(/img/main-page/hero/slider-background-tablet-1@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -127,7 +127,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../img/main-page/hero/slider-background-tablet-1@2x.jpg);
+        url(/img/main-page/hero/slider-background-tablet-1@2x.webp);
     }
   }
 
@@ -139,7 +139,7 @@
           rgba(25, 28, 38, 0.2),
           rgba(25, 28, 38, 0.2)
         ),
-        url(../img/main-page/hero/slider-background-tablet-1@3x.jpg);
+        url(/img/main-page/hero/slider-background-tablet-1@3x.webp);
     }
   }
 }
@@ -153,7 +153,31 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../img/main-page/hero/slider-background-desktop-1.jpg);
+      url(/img/main-page/hero/slider-background-desktop-1@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(/img/main-page/hero/slider-background-desktop-1@2x.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(/img/main-page/hero/slider-background-desktop-1@3x.webp);
+    }
   }
 
   .hero__subtitle {
