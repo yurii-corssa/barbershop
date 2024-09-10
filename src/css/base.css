@@ -8,6 +8,18 @@
   --secondary-light-color: #9da4bd;
   --secondary-dark-color: #555555;
   --light-background-color: #f7f7f7;
+  --dark-background-light-color: rgba(25, 28, 38, 0.2);
+  --dark-background-dark-color: rgba(17, 19, 25, 0.8);
+  --first-prices-gradient: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+  --second-prices-gradient: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 html {
