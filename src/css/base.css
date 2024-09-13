@@ -85,7 +85,7 @@ body {
   color: var(--secondary-light-color-alpha);
 }
 
-.dark {
+.dark-text {
   color: var(--main-dark-color);
 }
 
