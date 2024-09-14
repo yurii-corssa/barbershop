@@ -1,0 +1,32 @@
+.gallery__label {
+  margin-bottom: 44px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery__item {
+  overflow: hidden;
+  height: 360px;
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery__item {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .gallery__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gallery__item {
+    width: calc((100% - (30px * 3)) / 4);
+  }
+}
