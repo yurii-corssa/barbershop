@@ -1,0 +1,96 @@
+.book-service {
+  background-color: var(--dark-background-color);
+}
+
+.book-service__title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.book-service__form {
+  display: flex;
+  flex-direction: column;
+  gap: 44px 30px;
+}
+
+.book-service__form-group {
+  position: relative;
+  width: 100%;
+}
+
+.book-service__input,
+.book-service__textarea {
+  width: 100%;
+  font-size: 18px;
+  line-height: 166.67%; /* 30/18 */
+  letter-spacing: 0.02rem;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary-light-color-alpha);
+  transition: padding 250ms ease, border-color 250ms ease;
+}
+
+.book-service__form-group > input:hover,
+.book-service__form-group > textarea:hover {
+  padding-left: 12px;
+  border-color: currentColor;
+}
+
+.book-service__label {
+  position: absolute;
+  left: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 136.36%; /* 15/11 */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-light-color-alpha);
+  transition: transform 250ms ease, color 250ms ease;
+}
+
+.book-service__input + label,
+.book-service__textarea + label {
+  top: 0;
+  transform: translate(0, 8px);
+}
+
+.book-service__input:hover + label,
+.book-service__input:focus + label,
+.book-service__textarea:hover + label,
+.book-service__textarea:focus + label {
+  color: currentColor;
+}
+
+.book-service__input:hover + label,
+.book-service__input:focus + label,
+.book-service__input:not(:placeholder-shown) + label,
+.book-service__textarea:hover + label,
+.book-service__textarea:focus + label,
+.book-service__textarea:not(:placeholder-shown) + label {
+  transform: translate(0, -100%);
+}
+
+.book-service__button {
+  min-width: 160px;
+  align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .book-service__title {
+    text-align: left;
+  }
+
+  .book-service__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .book-service__form-group:nth-child(-n + 2) {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .book-service {
+    width: 50%;
+  }
+}

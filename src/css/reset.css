@@ -36,3 +36,17 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+input,
+textarea {
+  font: inherit;
+  border: none;
+  background: transparent;
+  color: currentColor;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 0;
+}
