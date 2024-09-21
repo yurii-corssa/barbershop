@@ -50,3 +50,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 0;
 }
+
+address {
+  font-style: normal;
+}
