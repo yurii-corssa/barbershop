@@ -1,9 +1,11 @@
 .prices {
+  --bg-image: url(../img/main-page/prices/pricelist-background-mobile@1x.webp);
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: var(--prices-background-gradient), var(--bg-image);
 }
 
 .about__label {
@@ -41,40 +43,6 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 479px) {
-  .prices {
-    background-image: linear-gradient(
-        var(--dark-background-dark-color),
-        var(--dark-background-dark-color)
-      ),
-      url(../img/main-page/prices/pricelist-background-mobile@1x.webp);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-mobile@2x.webp);
-    }
-  }
-
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-mobile@3x.webp);
-    }
-  }
-}
-
 @media only screen and (min-width: 480px) {
   .prices__row {
     display: grid;
@@ -92,24 +60,12 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .prices {
-    background-image: linear-gradient(
-        var(--dark-background-dark-color),
-        var(--dark-background-dark-color)
-      ),
-      url(../img/main-page/prices/pricelist-background-tablet@1x.webp);
-  }
-
+@media only screen and (max-width: 767px) {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-tablet@2x.webp);
+      --bg-image: url(../img/main-page/prices/pricelist-background-mobile@2x.webp);
     }
   }
 
@@ -117,54 +73,44 @@
     (min-resolution: 288dpi),
     (min-resolution: 3dppx) {
     .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-tablet@3x.webp);
+      --bg-image: url(../img/main-page/prices/pricelist-background-mobile@3x.webp);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .prices {
+    --bg-image: url(../img/main-page/prices/pricelist-background-tablet@1x.webp);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      --bg-image: url(../img/main-page/prices/pricelist-background-tablet@2x.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .prices {
+      --bg-image: url(../img/main-page/prices/pricelist-background-tablet@3x.webp);
     }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .prices {
-    background-image: linear-gradient(
-        var(--dark-background-dark-color),
-        var(--dark-background-dark-color)
-      ),
-      url(../img/main-page/prices/pricelist-background-desktop@1x.webp);
-  }
-
   .prices__cell {
     font-size: 18px;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-desktop@2x.webp);
-    }
-  }
-
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
-    .prices {
-      background-image: linear-gradient(
-          var(--dark-background-dark-color),
-          var(--dark-background-dark-color)
-        ),
-        url(../img/main-page/prices/pricelist-background-desktop@3x.webp);
-    }
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .prices {
+    --bg-image: url(../img/main-page/prices/pricelist-background-desktop@1x.webp);
+  }
+
   .prices__table {
     background: var(--first-prices-gradient) 0 0 / 50% 100% no-repeat,
       var(--second-prices-gradient) 100% 0 / 50% 100% no-repeat;
@@ -173,5 +119,21 @@
   .prices__body {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .prices {
+      --bg-image: url(../img/main-page/prices/pricelist-background-desktop@2x.webp);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .prices {
+      --bg-image: url(../img/main-page/prices/pricelist-background-desktop@3x.webp);
+    }
   }
 }
