@@ -62,7 +62,7 @@ body {
   }
 
   .dual-section__wrapper {
-    padding: 130px 55px;
+    padding: 0 55px;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -141,6 +141,15 @@ body {
   font-size: 42px;
   line-height: 116.67%; /* 49/42 */
   letter-spacing: 0.05em;
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--main-dark-color);
+  transition: color 250ms ease;
 }
 
 .visually-hidden {

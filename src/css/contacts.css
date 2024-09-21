@@ -29,13 +29,14 @@
 }
 
 .contacts__icon {
+  flex-shrink: 0;
   stroke: currentColor;
 }
 
 .contacts__link {
   font-size: 18px;
   line-height: 166.67%; /* 30/18 */
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   transition: color 250ms ease;
 }
 

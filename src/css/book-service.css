@@ -23,7 +23,7 @@
   width: 100%;
   font-size: 18px;
   line-height: 166.67%; /* 30/18 */
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.02em;
   text-align: left;
   border-bottom: 1px solid var(--secondary-light-color-alpha);
   transition: padding 250ms ease, border-color 250ms ease;

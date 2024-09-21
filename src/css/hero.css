@@ -38,12 +38,6 @@
 .hero__social-link {
   transform: scale(-1, -1);
   writing-mode: vertical-rl;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--main-dark-color);
-  transition: color 250ms ease;
 }
 
 .hero__social-link:hover,
