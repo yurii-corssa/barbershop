@@ -39,6 +39,7 @@ body {
 }
 
 .section {
+  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -62,7 +63,6 @@ body {
   }
 
   .dual-section__wrapper {
-    padding: 0 55px;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -127,13 +127,21 @@ body {
   color: var(--main-light-color);
 }
 
-.burger-btn {
+.burger-btn,
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   fill: currentColor;
   transition: color 250ms ease;
 }
 
 .burger-btn:hover,
-.burger-btn:focus {
+.burger-btn:focus,
+.close-btn:hover,
+.close-btn:focus {
   color: var(--active-color);
 }
 
@@ -150,6 +158,30 @@ body {
   letter-spacing: 0.2em;
   color: var(--main-dark-color);
   transition: color 250ms ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--active-color);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: var(--dark-background-light-color);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms ease, visibility 0s 250ms;
+}
+.backdrop.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms ease;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 .visually-hidden {

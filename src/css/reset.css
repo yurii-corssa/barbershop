@@ -18,6 +18,7 @@ ol {
 }
 
 a {
+  display: block;
   color: currentColor;
   text-decoration: none;
 }

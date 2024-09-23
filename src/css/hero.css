@@ -40,11 +40,6 @@
   writing-mode: vertical-rl;
 }
 
-.hero__social-link:hover,
-.hero__social-link:focus {
-  color: var(--active-color);
-}
-
 .hero__slider {
   display: none;
 }

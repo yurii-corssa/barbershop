@@ -25,6 +25,9 @@
   line-height: 166.67%; /* 30/18 */
   letter-spacing: 0.02em;
   text-align: left;
+  resize: vertical;
+  min-height: 36px;
+  max-height: 200px;
   border-bottom: 1px solid var(--secondary-light-color-alpha);
   transition: padding 250ms ease, border-color 250ms ease;
 }
