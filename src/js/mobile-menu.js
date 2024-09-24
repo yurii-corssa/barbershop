@@ -3,6 +3,7 @@ const closeBtn = document.querySelector(".mobile-menu__close-btn-js");
 const mobileMenu = document.querySelector(".mobile-menu-js");
 const backdrop = document.querySelector(".backdrop-js");
 const body = document.body;
+const navLinks = document.querySelectorAll(".mobile-menu__link-js");
 
 const openMenu = () => {
   mobileMenu.classList.add("visible");
@@ -27,3 +28,4 @@ document.addEventListener("keydown", e => {
     closeMenu();
   }
 });
+navLinks.forEach(link => link.addEventListener("click", closeMenu));
