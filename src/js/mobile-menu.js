@@ -12,7 +12,7 @@ const openMenu = () => {
   mobileMenu.setAttribute("aria-hidden", "false");
 };
 
-const closeMenu = () => {
+export const closeMenu = () => {
   mobileMenu.classList.remove("visible");
   backdrop.classList.remove("visible");
   body.classList.remove("no-scroll");
