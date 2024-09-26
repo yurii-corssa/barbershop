@@ -1,0 +1,9 @@
+.success-modal-btn {
+  align-self: flex-end;
+}
+
+.success-modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}

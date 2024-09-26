@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -182,6 +183,34 @@ body {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  background-color: var(--main-light-color);
+  padding: 65px 55px 35px 55px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: min(90vw, 500px);
+  box-shadow: -1px 0px 3px 0px rgba(0, 0, 0, 0.16),
+    -2px 0px 4px 0px rgba(0, 0, 0, 0.08), -4px 0px 8px 0px rgba(0, 0, 0, 0.04);
+  z-index: 1001;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 450ms ease, opacity 450ms ease, visibility 0s 450ms;
+}
+
+.modal.visible {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  transition: transform 450ms ease, opacity 450ms ease;
 }
 
 .visually-hidden {
