@@ -1,5 +1,4 @@
-import { createImage } from "./helpers";
-import debounce from "./helpers/debounce";
+import { createImage, debounce } from "./helpers";
 
 const nextButton = document.querySelector(".hero-slider-btn-next-js");
 const prevButton = document.querySelector(".hero-slider-btn-prev-js");
