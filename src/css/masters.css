@@ -84,9 +84,14 @@
 
 @media only screen and (min-width: 1280px) {
   .masters__list {
+    --column-gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
+    column-gap: var(--column-gap);
     row-gap: 64px;
+  }
+
+  .masters__item {
+    width: calc((100% - (var(--column-gap) * 2)) / 3);
   }
 }
